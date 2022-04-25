@@ -7,12 +7,12 @@ const Cards = (props) => {
   const card = props.card;
 
   return (
-    <Col sm={6} lg={3}>
+    <Col sm={6} md={3} lg={3}>
       <Card key={card.category_id}>
-        <Card.Img variant="top" src={url + card.image} />
-        <Card.Body>
-          <Card.Text className="badge">{card.discount}%</Card.Text>
-          <Card.Title className="foodName">{card.name}</Card.Title>
+        <Card.Img className="img" src={url + card.image} />
+
+        <Card.Title className="foodName">{card.name}</Card.Title>
+        <Card.Text className="allPrice">
           <Card.Text className="foodPrice">{card.price}₮</Card.Text>
           <Card.Text className="activePrice">
             {card.discount > 0
@@ -20,7 +20,8 @@ const Cards = (props) => {
               : ""}
             {""}
           </Card.Text>
-        </Card.Body>
+        </Card.Text>
+        <Card.Text className="badge">{card.discount}%</Card.Text>
       </Card>
     </Col>
   );

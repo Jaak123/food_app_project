@@ -5,28 +5,28 @@ import UserProfile from "./contents/UserProfile";
 import { NavLink, Route, Routes } from "react-router-dom";
 import NotFound from "./NotFound";
 
-export default function Login() {
+const Login = () => {
+  // const [username, setUserName] = useState({});
+  // const [password, setPassword] = useState({});
+
+  // const
+
   return (
     <>
-      <h1>This is a login component</h1>
-      <ul>
-        <li>
-          <NavLink to="/login/userprofile">login successfully</NavLink>
-        </li>
-        <li>
-          <NavLink to="/register">register</NavLink>
-        </li>
-        <li>
-          <NavLink to="/login/forgotpassword">forgot password</NavLink>
-        </li>
-      </ul>
-
-      <Routes>
-        <Route path="userprofile" element={<UserProfile />}></Route>
-        <Route path="register" element={<Register />}></Route>
-        <Route path="forgotpassword" element={<ForgotPassword />}></Route>
-        <Route path="*" element={<NotFound />}></Route>
-      </Routes>
+      <div>
+        <form>
+          <label>
+            Нэр
+            <input name="emailOrUsername" type="text" />
+          </label>
+          <label>
+            Password
+            <input name="password" type="password" />
+          </label>
+          <button type="submit">Бүртгүүлэх</button>
+        </form>
+      </div>
     </>
   );
-}
+};
+export default Login;
