@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap");
+
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+  }
+  .card {
+    margin: 0 10px;
+    width: 156px;
+    height: 190px;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px !important;
+    padding: 10px;
+    left: 0;
+    top: 0;
+    bottom: 10px;
+  }
+  .card img {
+    width: 136px;
+    height: 120px;
+    /* position: absolute; */
+    border-radius: 7px;
+  }
+
+  .card .activePrice {
+    display: inline-block;
+  }
+  .card .foodPrice {
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 600;
+    width: 55px;
+    height: 15px;
+    color: #f17228;
+    display: block;
+    padding-bottom: 5px;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+.card {
+  margin: 0 20px;
+  width: 160px;
+  height: 200px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 10px !important;
+  padding: 10px;
+}
+.card img {
+  width: 140px;
+  height: 132px;
+  position: absolute;
+  border-radius: 6px;
+}
+
+.card .activePrice {
+  display: inline-block;
+}
+.card .foodPrice {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 600;
+  width: 55px;
+  height: 15px;
+  color: #f17228;
+  margin: 0px 10px;
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+  }
+  .card {
+    width: 282px;
+    height: 304px;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 20px !important;
+    padding: 15px;
+  }
+  .card img {
+    width: 252px;
+    height: 208px;
+    position: absolute;
+    border-radius: 8px;
+    right: 15px;
+    top: calc(50% - 208px / 2 - 33px);
+  }
+
+  .card .activePrice {
+    display: inline-block;
+  }
+  .card .foodPrice {
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 600;
+    width: 69px;
+    height: 27px;
+    color: #f17228;
+    line-height: 27px;
+  }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
